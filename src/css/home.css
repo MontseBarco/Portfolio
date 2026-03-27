@@ -1,3 +1,16 @@
+:root {
+    --black: #030104;
+    --white: #DDD7F5;
+    --primary-light: #9D8BE7;
+    --primary-dark: #5A4B90;
+    --accent-dark: #180920;
+
+    --bg-gradient-direction: 120deg;
+
+    --bg-gradient: linear-gradient(var(--bg-gradient-direction),var(--accent-dark) 0%, var(--black) 100%);
+}
+
 body {
-    background-color: white;
+    background: var(--black);
+    background: var(--bg-gradient)
 }
