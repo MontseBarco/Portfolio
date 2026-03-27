@@ -12,5 +12,18 @@
 
 body {
     background: var(--black);
-    background: var(--bg-gradient)
+    background: var(--bg-gradient);
+
+    display: grid;
+
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+
 }
+
+main {
+    grid-area: main;
+}
+

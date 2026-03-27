@@ -11,6 +11,10 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/home.css">
 
@@ -24,16 +28,20 @@
     </script>
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="page-header">
+        <nav class="page-nav">
             <ul>
                 <li class="current-page hover"><a href="index.html" aria-current="page">Home</a></li>
                 <li class="hover"><a href="src/html/about.html">About Me</a></li>
                 <li class="hover"><a href="src/html/projects.html">Projects</a></li>
             </ul>
         </nav>
-        <a class="icon" href="https://github.com/MontseBarco" target="_blank" referrerpolicy="no-referrer" aria-label="My GitHub Page"><i class="fa-brands fa-square-github"></i></a>
-        <a class="icon" href="https://www.instagram.com/macaroniandcheese_101_" aria-label="Visit my instagram profile." target="_blank" rel="noreferrer"><i class="fa-brands fa-square-instagram"></i></a>
+        <nav class="out-nav">
+            <ul>
+                <li class="hover"><a href="https://github.com/MontseBarco" target="_blank" referrerpolicy="no-referrer" aria-label="My GitHub Page"><i class="fa-brands fa-square-github icon"></i></a></li>
+                <li class="hover"><a href="https://www.instagram.com/macaroniandcheese_101_" aria-label="Visit my instagram profile." target="_blank" rel="noreferrer"><i class="fa-brands fa-square-instagram icon"></i></a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -53,7 +61,7 @@
 
     </main>
 
-    <footer>
+    <footer class="page-footer">
         <small>&copy; 2026 Montserrat Barco Montemayor - All rights reserved</small>
         <a href="src/html/impressum.html">Impressum</a>
     </footer>
