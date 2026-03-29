@@ -23,7 +23,8 @@ body {
 
 }
 
-main {
-    grid-area: main;
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-

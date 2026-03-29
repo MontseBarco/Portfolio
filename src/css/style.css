@@ -1,6 +1,7 @@
 :root {
     --radius-soft: 10px;
     
+    --txt-size-small: 15px;
     --txt-size-norm: 22px;
     --txt-size-big: 35px;
     
@@ -21,6 +22,10 @@
     font-weight: var(--txt-weight-norm);
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .icon {
     font-size: var(--txt-size-big);
 }
@@ -30,8 +35,16 @@
 }
 
 .hover:hover {
-    box-shadow: var(--shadow-hover-themed);
+    /* box-shadow: var(--shadow-hover-themed);
+    transform: translateY(-2px); */
     transform: translateY(-2px);
+}
+
+.content-box-vertical {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
 }
 
 .page-header {
@@ -88,8 +101,25 @@
     }
 }
 
-
+.page-main {
+    grid-area: main;
+}
 
 .page-footer {
     grid-area: footer;
+
+    padding: 20px 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+
+
+    > * {
+        font-size: var(--txt-size-small);
+        color: var(--primary-dark);
+    }
+    
 }
