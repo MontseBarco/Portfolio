@@ -1,9 +1,11 @@
 :root {
-    --black: #030104;
+    --black: #000000;
     --white: #DDD7F5;
-    --primary-light: #9D8BE7;
-    --primary-dark: #5A4B90;
+    --primary-light: #a57bdb;
+    --primary-dark: #7546c2;
     --accent-dark: #180920;
+
+    --border-thick-acclight: 8px solid var(--primary-light);
 
     --bg-gradient-direction: 120deg;
 
@@ -27,4 +29,60 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 100px;
+
+    min-height: 80vh;
+    max-width: 80vw;
+    margin: 0 auto;
+
+    border-bottom: var(--border-thick-acclight);
+
+    & .content-box-vertical {
+
+        justify-content: start;
+
+        & h2 {
+            color: var(--primary-dark);
+            font-size: var(--txt-size-bigger);
+            font-weight: var(--txt-weight-heavy);
+        }
+
+        & h1 * {
+            font-size: var(--txt-size-biggest);
+            font-weight: var(--txt-weight-heavier);
+        }
+    }
+
+    & .ul-horizontal {
+        
+        margin-top: 20px;
+
+        > li {
+            background-color: var(--primary-dark);
+            color: var(--accent-dark);
+            
+            & * {
+                font-size: var(--txt-size-small);
+            }
+        }
+    }
+
+    & .img-bg {
+        background-color: var(--primary-dark);
+        border-radius: var(--radius-circle);
+        
+        outline: var(--border-thick-acclight);
+        outline-offset: 12px;
+
+        aspect-ratio: 1/1;
+
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        padding: 0 40px;
+
+        max-height: 60vh;
+
+    }
+
 }

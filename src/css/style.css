@@ -1,12 +1,18 @@
 :root {
     --radius-soft: 10px;
     
-    --txt-size-small: 15px;
-    --txt-size-norm: 22px;
+    --txt-size-small: 20px;
+    --txt-size-norm: 25px;
     --txt-size-big: 35px;
+    --txt-size-bigger: 60px;
+    --txt-size-biggest: 80px;
     
     --txt-weight-norm: 400;
     --txt-weight-heavy: 600;
+    --txt-weight-heavier: 650;
+
+    --radius-hardest: 50px;
+    --radius-circle: 100%;
 
     --shadow-hover-themed: var(--primary-light) 0px 8px 24px;
 }
@@ -43,8 +49,22 @@ a:hover {
 .content-box-vertical {
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
+}
+
+.ul-horizontal {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.icon-text-field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: var(--radius-hardest);
 }
 
 .page-header {
@@ -72,6 +92,7 @@ a:hover {
                 > * {
                     color: var(--primary-light);
                     text-decoration: none;
+                    font-size: var(--txt-size-norm);
                 }
             }
 
@@ -103,6 +124,7 @@ a:hover {
 
 .page-main {
     grid-area: main;
+    min-height: calc(100vh - 60px - 90px);
 }
 
 .page-footer {
@@ -122,4 +144,12 @@ a:hover {
         color: var(--primary-dark);
     }
     
+}
+
+.color-primary-light {
+    color: var(--primary-light);
+}
+
+.color-white {
+    color: var(--white);
 }
